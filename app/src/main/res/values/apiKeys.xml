@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="movieDbApiKey">d67c2fa89e54305056dc659af47e1682</string>
+    <string name="movieDbApiKey">your key goes here</string>
 </resources>
