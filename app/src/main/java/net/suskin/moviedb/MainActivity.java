@@ -115,11 +115,11 @@ public class MainActivity extends AppCompatActivity {
         protected void onPostExecute(String movieDbResults) {
             if (movieDbResults != null && !movieDbResults.equals("")) {
 
-                ArrayList movieList = ParseMovieListJSON.parseMovieSearch(movieDbResults);
+                ArrayList posterPaths = ParseMovieListJSON.parseMovieSearch(movieDbResults);
                 //TODO: take this out after debugging
-                Log.i("MovieList", Arrays.toString(new ArrayList[]{movieList}));
+                Log.i("MovieList", Arrays.toString(new ArrayList[]{posterPaths}));
 
-                ArrayAdapter<String> movieAdapter = new ArrayAdapter<String>(MainActivity.this, android.R.layout.simple_list_item_1, movieList);
+                ArrayAdapter<String> movieAdapter = new ArrayAdapter<String>(MainActivity.this, android.R.layout.simple_list_item_1, posterPaths);
                 resultsDisplay.setAdapter(movieAdapter);
 
 
