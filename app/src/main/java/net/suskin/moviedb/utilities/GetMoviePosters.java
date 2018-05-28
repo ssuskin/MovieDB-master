@@ -25,6 +25,7 @@ https://api.themoviedb.org/3/configuration?api_key=yourKeyHere
 
 import android.media.Image;
 import android.net.Uri;
+import android.os.AsyncTask;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -73,5 +74,27 @@ public class GetMoviePosters {
 
     }
 
+    public class bringBackPosters extends AsyncTask<URL, Void, String> {
+
+        @Override
+        protected String doInBackground(URL... urls) {
+            return null;
+        }
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+        }
+
+        @Override
+        protected void onProgressUpdate(Void... values) {
+            super.onProgressUpdate(values);
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+        }
+    }
 }
 
